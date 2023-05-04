@@ -251,7 +251,7 @@
 		<param-name>ServerUrl</param-name>  
 		<param-value>http://localhost:8080/cadviewer/</param-value>    
 		</init-param>
-		<init-param>
+		<init-param> 
 		<param-name>fileLocation</param-name>  
 <!--		<param-value>/xampp/tomcat/webapps/cadviewer/converters/files/</param-value>    -->
 		  <param-value>/opt/tomcat/webapps/cadviewer/converters/files/</param-value>
@@ -267,8 +267,8 @@
 		</init-param>
 		<init-param>	
 		<param-name>ax2020_executable</param-name>  
-<!--		<param-value>AX2023_W64_23_12_107.exe</param-value>    -->
- <param-value>ax2023_L64_23_12_111</param-value>
+<!--		<param-value>AX2023_W64_23_12_113b.exe</param-value>    -->
+ <param-value>ax2023_L64_23_12_113b</param-value>
 		</init-param>
 		<init-param>
 		<param-name>licenseLocation</param-name>  
@@ -304,7 +304,7 @@
 		<init-param>
 		<param-name>dwgmerge2020_executable</param-name>  
 <!--		<param-value>DwgMerge2023_W32_23_01_01.exe</param-value> -->
-  		<param-value>DwgMerge_2023_L64_23_01_01</param-value>
+  		<param-value>DwgMerge_2023_L64_23_01_02</param-value>
 		</init-param>
 
     </servlet>
@@ -377,8 +377,8 @@
 		</init-param>
 		<init-param>	
 		<param-name>ax2020_executable</param-name>  
-<!--		<param-value>AX2023_W64_23_12_107.exe</param-value>    -->
-  <param-value>ax2023_L64_23_12_111</param-value>
+<!--		<param-value>AX2023_W64_23_12_113b.exe</param-value>    -->
+  <param-value>ax2023_L64_23_12_113b</param-value>
 		</init-param>
 		<init-param>
 		<param-name>licenseLocation</param-name>  

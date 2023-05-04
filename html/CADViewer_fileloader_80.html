@@ -10,13 +10,13 @@
     <meta name="description" content="Tailor Made Software  - CADViewer Online Sample " />
     <meta name="keywords" content="" />
 
-	<link href="../app/css/cvjs-core-styles.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/cadviewer-core-styles.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="../app/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
 	<link href="../app/css/jquery.qtip.min.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="../app/css/jquery-ui-1.13.2.min.css" media="screen" rel="stylesheet" type="text/css" />
 
-	<link href="../app/css/bootstrap-cadviewer.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/cadviewer-bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
 	
 
 	<script src="../app/js/jquery-2.2.3.js" type="text/javascript"></script>
@@ -26,12 +26,14 @@
 	<script src="../app/js/popper.js" type="text/javascript"></script>
 
 	<script src="../app/js/bootstrap-cadviewer.js" type="text/javascript"></script>
-
-	 
-
+	
 	<script src="../app/js/jquery-ui-1.13.2.min.js" type="text/javascript"></script>
+	<script src="../app/js/eve.js" type="text/javascript" ></script>
+	
+	<script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script>
 
-	<script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script> 
+<!-- <script src="../app/cv/cv-pro/cadviewer_base_pro_8_64_2.js" type="text/javascript"></script> -->
+
 
 
 	<script src="../app/cv/cv-pro/custom_rules_template.js" type="text/javascript" ></script>
@@ -62,14 +64,12 @@
 	// Location of installation folders
     var ServerBackEndUrl = "http://localhost:8080/cadviewer/";
     var ServerUrl = "http://localhost:8080/cadviewer/";
-    var ServerLocation = "";
+    var ServerLocation = "/opt/tomcat/webapps/cadviewer/";
+//    var ServerLocation = "";
 
 
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG
-	var FileName = ServerUrl + "/content/drawings/dwg/Asbestos_drawing_01.dwg";	
-
-//var FileName = ServerUrl + "/content/drawings/dwg/E.dwf";		
-        
+	var FileName = ServerUrl + "/content/drawings/dwg/Asbestos_drawing_01.dwg";		
 
 	// var FileName = "https://onlinedemo.cadviewer.com/cadviewer_7_0/content/drawings/Cancel_Up_1.png";		
 
@@ -186,7 +186,8 @@
 
 		
 		// CHANGE LANGUAGE - DEFAULT IS ENGLISH
-		cvjs_loadCADViewerLanguage("English", "/app/cv/cv-pro/language_table/cadviewerProLanguage.xml");
+		 cvjs_loadCADViewerLanguage("English", "/app/cv/cv-pro/language_table/cadviewerProLanguage.xml");
+//		 cvjs_loadCADViewerLanguage("English", "/app/cv/cv-pro/custom_language_table/internal01_cadviewerProLanguage.xml");
 		// Available languages:  "English" ; "French, "Korean", "Spanish", "Portuguese", "Portuguese (Brazil)" ;  "Russian" ; "Malay" ;  "Chinese-Simplified"
 				
 		// Set Icon Menu Interface controls. Users can: 
@@ -335,10 +336,9 @@
 		cvjs_conversion_clearAXconversionParameters();
 		cvjs_conversion_addAXconversionParameter("last", "");		 
 //		cvjs_conversion_addAXconversionParameter("firstlayout", "");		 
-		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2023/linux/fonts/");		 
+		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2023/windows/fonts/");		 
 
-	        
-		cvjs_conversion_addAXconversionParameter ("trace","");
+	
 //		cvjs_conversion_addAXconversionParameter ("RL", "IDB");
 //		cvjs_conversion_addAXconversionParameter ("TL", "IDB_REF");	
 
@@ -747,7 +747,7 @@ function cvjs_mouseenter(id, handle, entity){
 
 	<!--This is the CADViewer floorplan div declaration -->
 
-		<div id="floorPlan"  style="border:2px none;width:600">
+		<div id="floorPlan" class="cadviewer-bootstrap cadviewer-core-styles"  style="border:2px none;">
 		</div>
 
 	<!--End of CADViewer declaration -->
