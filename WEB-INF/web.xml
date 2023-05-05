@@ -268,7 +268,7 @@
 		<init-param>	
 		<param-name>ax2020_executable</param-name>  
 <!--		<param-value>AX2023_W64_23_12_113b.exe</param-value>    -->
- <param-value>ax2023_L64_23_12_113b</param-value>
+ <param-value>ax2023_L64_23_12_113d</param-value>
 		</init-param>
 		<init-param>
 		<param-name>licenseLocation</param-name>  
@@ -304,7 +304,7 @@
 		<init-param>
 		<param-name>dwgmerge2020_executable</param-name>  
 <!--		<param-value>DwgMerge2023_W32_23_01_01.exe</param-value> -->
-  		<param-value>DwgMerge_2023_L64_23_01_02</param-value>
+  		<param-value>DwgMerge_2023_L64_23_01_01</param-value>
 		</init-param>
 
     </servlet>
@@ -378,7 +378,7 @@
 		<init-param>	
 		<param-name>ax2020_executable</param-name>  
 <!--		<param-value>AX2023_W64_23_12_113b.exe</param-value>    -->
-  <param-value>ax2023_L64_23_12_113b</param-value>
+  <param-value>ax2023_L64_23_12_113d</param-value>
 		</init-param>
 		<init-param>
 		<param-name>licenseLocation</param-name>  
