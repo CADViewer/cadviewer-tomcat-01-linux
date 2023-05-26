@@ -91,7 +91,8 @@
 				
 		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
 		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
-		
+	
+
 						
 					
 						
@@ -352,6 +353,26 @@
 
 		// Load file - needs the svg div name and name and path of file to load
 		cvjs_LoadDrawing("floorPlan", FileName );
+
+
+//   NOTE 8.70.5 - set compare drawing direct, http file OK
+//        cvjs_setCompareDrawings_LoadSecondDrawingDirect("floorPlan", ServerBackEndUrl + "/content/compare/compare_a2.dwg");
+//        cvjs_setCompareDrawings_LoadSecondDrawingDirect("floorPlan", "https://onlinedemo.cadviewer.com/cadviewer_7_0/content/drawings/dwg/hq17.dwg");
+
+
+
+      
+//  NOTE 8.70.5 - cvjs_CompareDirect loads two drawing NOTE! comment out // cvjs:LoadDrawing()
+// 	      cvjs_CompareDrawings("floorPlan", ServerBackEndUrl + "/content/compare/compare_a1.dwg", ServerBackEndUrl + "/content/compare/compare_a2.dwg");
+
+
+
+
+
+
+
+
+
 
 		// set maximum CADViewer canvas side
 	    cvjs_resizeWindow_position("floorPlan" );
