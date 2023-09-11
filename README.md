@@ -1,4 +1,4 @@
-# cadviewer-tomcat-01
+# cadviewer-tomcat-linux-01
 implementation  structure of cadviewer-script-library using Servlets
 
 The repository contains a full setup of CADViewer with CAD Converters and script controllers for Servlets.  It must be installed under tomcat, /webapps/cadviewer.  Typical full path is: ***/opt/tomcat/webapps/cadviewer/***    For war versions, please visit our [download site](https://cadviewer.com/download/).
