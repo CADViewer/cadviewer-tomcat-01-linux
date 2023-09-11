@@ -1,7 +1,7 @@
 # cadviewer-tomcat-01
 implementation  structure of cadviewer-script-library using Servlets
 
-The repository contains a full setup of CADViewer with CAD Converters and script controllers for Servlets.  It must be installed under tomcat /webapps/cadviewer.   For war versions, please visit our [download site](https://cadviewer.com/download/).
+The repository contains a full setup of CADViewer with CAD Converters and script controllers for Servlets.  It must be installed under tomcat, /webapps/cadviewer.  Typical full path is: ***/opt/tomcat/webapps/cadviewer/***    For war versions, please visit our [download site](https://cadviewer.com/download/).
 
 ## This package contains
 
@@ -74,10 +74,10 @@ This repository should contain the latest converters, but in case you need to up
 ### Folder Structure
 For a CADViewer Servlets installation under Tomcat on Windows, the base file-structure should be as below: 
 
-**NOTE:** Under Linux replace **c:\xampp\tomcat\webapps** with **/var/lib/tomcat{X}**.
+**NOTE:** Under Windows replace **/opt/tomcat/webapps/** with  **c:\xampp\tomcat\webapps**.
 
 <pre style="line-height: 110%">
-c:\xampp\tomcat\webapps
+/opt/tomcat/webapps/
        └─── cadviewer
                ├── app
                │    ├── cv
@@ -122,20 +122,20 @@ c:\xampp\tomcat\webapps
 </pre>
 
 **1:** [Download](https://cadviewer.com/download/) and install **CADViewer** under this structure.  <br>
-**2:** [Download](https://cadviewer.com/download/) and install **AutoXchange 2023** under this structure. <br>
+**2:** [Download](https://cadviewer.com/download/) and install **AutoXchange 2024** under this structure. <br>
 **3:** Optionally, [Download](https://cadviewer.com/download/) and install **DwgMerge 2023** under this structure.
 
 
 ### WEB-INF Configuration
 
-**NOTE:** Under Linux replace **c:\xampp\tomcat\webapps** with **/var/lib/tomcat{X}**.
 
+**NOTE:** Under Windows replace **/opt/tomcat/webapps/** with  **c:\xampp\tomcat\webapps**.
 
 In folder:
 
 <pre style="line-height: 110%">
-c:\xampp\tomcat\webapps
-	            └─── cadviewer
+/opt/tomcat/webapps/
+	└─── cadviewer
                         └─── WEB-INF
                                ├── classes
                                └── lib
@@ -153,12 +153,12 @@ Locate and change all CADViewer Servlets related  **&lt;param-name&gt; / &lt;par
 
 ### HTML 
 
-**NOTE:** Under Linux replace **c:\xampp\tomcat\webapps** with **/var/lib/tomcat{X}**.
+**NOTE:** Under Windows replace **/opt/tomcat/webapps/** with  **c:\xampp\tomcat\webapps**.
 
 In folder:
 
 <pre style="line-height: 110%">
-c:\xampp\tomcat\webapps
+/opt/tomcat/webapps/
     └─── cadviewer
             └── html
 </pre>
