@@ -25,20 +25,16 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 ## Install
 
-### Windows:  
-
-Use as is.
-
 ### Linux:  
-
-In cadviewer/WEB-INF/web.xml, change all \<!-- --> settings strings for AX2023 executable, DwgMerge executable, and all cadviewer paths so they match the tomcat/webapps/ setting in Linux install environment.  
-
-Unpack the tar.gz file with ax2023 executable in /cadviewer/converters/ax2023/linux folder. 
 
 Ensure ax2023_L64_xx_yy_zz has chmod 777 permissions.  
 
 Ensure /cadviewer/converters/files/ folder and all subfolders to this folder have full read and write permissions. 
 
+
+### Windows:  
+
+In cadviewer/WEB-INF/web.xml, change all \<!-- --> settings strings for AX2023 executable, DwgMerge executable, and all cadviewer paths so they match the etting in windows install environment.  
 
 
 
