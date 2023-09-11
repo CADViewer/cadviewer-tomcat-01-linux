@@ -7,13 +7,13 @@ The repository contains a full setup of CADViewer with CAD Converters and script
 
 1: CADViewer Servlet script library  - in its preferred folder structure
 
-2: AutoXchange AX2023 Converter and DWG Merge 2023 Converter - in their preferred folder structure
+2: AutoXchange AX2024 Converter and DWG Merge 2024 Converter - in their preferred folder structure
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
 4: A number of HTML files with CADViewer samples.
 
-5: The folder structure for Servlet script handlers for communication between CADViewer and the back-end AutoXchange 2023.
+5: The folder structure for Servlet script handlers for communication between CADViewer and the back-end AutoXchange 2024.
 
 
 ## This package does not contain
